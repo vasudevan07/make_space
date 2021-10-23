@@ -72,7 +72,13 @@ Download installation file based on your operating system and install Python in 
 
 ### Clone
 
-Clone this solution folder to your local environment
+Clone this repo to your local environment using git clone
+
+```
+
+git clone https://github.com/vasudevan07/make_space.git
+
+```
 
 ### Create virtual environment
 
