@@ -4,7 +4,7 @@ This web application is built based on a use case for an imaginary company that 
 This project is to build a scheduling system to effectively schedule meetings.
 
 
-![Index Page](img/indexPage.jpg)
+![Index Page](img/indexPage.JPG)
 
 
 This use case has three rooms:

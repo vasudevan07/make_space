@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Simple Meeting Room Scheduler</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<!-- Required fonts --->
+	<link href="fonts/roboto/style.css" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="css/owl.carousel.min.css"> -->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+	
+	<!-- jquery 3.4.1 --->
+	<script src="js/jquery-3.4.1.min.js"></script>
+	
+	
+	<!--- time picker files -->
+	<script type="text/javascript" src="js/jquery.timepicker.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/jquery.timepicker.css" />
+	
+	<!--- sweet alert modal files --->
+	<script src="js/sweetalert2.min.js"></script>
+	<link rel="stylesheet" href="css/sweetalert2.min.css">
+	
+  </head>
+  <body>
+  
+
+  
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-md-6 contents">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="mb-4">
+              <h3>Book Meeting Room</h3>
+              <p class="mb-4">Book a spacious room for your meetings, conference based on your capacity</p>
+            </div>
+             <form class="mb-5" id="bookingForm" name="bookingForm">
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input id="startTime" type="text" class="time" placeholder="Begins at" required/>
+					<span class="startTimeSpan" style="color:red; display:none">This field is required.</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input id="endTime" type="text" class="time" placeholder="Ends at" required/>
+					<span class="endTimeSpan" style="color:red; display:none">This field is required.</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <input type="number" id="capacity" min="1" max="20">
+					<span class="capacitySpan" style="color:red; display:none">This field is required for booking.</span>
+					<label>(Capacity - max 20)</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <input type="button" id="vacancy" value="Check Vacancy" name="vacancy" class="btn btn-primary rounded-0 py-2 px-4 flashy__success">
+					<input type="button" id="book" value="Book" name = "book" class="btn btn-primary rounded-0 py-2 px-4 flashy__success" disabled>
+                  </div>
+				  
+                </div>
+              </form>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+  
+	<script src="js/main.js">
+	
+	</script>
+  </body>
+</html>
